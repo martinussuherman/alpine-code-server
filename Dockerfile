@@ -1,4 +1,4 @@
-FROM martinussuherman/alpine-tz-ep
+FROM martinussuherman/alpine-tz-ep:glibc
 
 ENV LABEL_MAINTAINER="Martinus Suherman" \
     LABEL_VENDOR="martinussuherman" \
@@ -17,19 +17,12 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     EGROUP=vscode \
     # container user home dir \
     EHOME=/home/vscode \
-    # additional directories to create + chown (space separated) \
-    ECHOWNDIRS= \
-    # additional files to create + chown (space separated) \
-    ECHOWNFILES= \
-    # container timezone \
-    TZ=UTC \
     # code-server version \
     VERSION=3.4.1
 
-# Install nodejs
+# Install dependencies
 RUN apk --no-cache --update add \
     curl \
-    gcompat \
     git \
     nodejs-current
 
