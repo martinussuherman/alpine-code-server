@@ -24,7 +24,9 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
 RUN apk --no-cache --update add \
     curl \
     git \
-    nodejs-current
+    gnupg \
+    nodejs-current \
+    openssh-client
 
 COPY code-server /usr/bin/
 
