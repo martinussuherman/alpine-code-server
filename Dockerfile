@@ -22,6 +22,7 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
 
 # Install dependencies
 RUN apk --no-cache --update add \
+    bash \
     curl \
     git \
     gnupg \
