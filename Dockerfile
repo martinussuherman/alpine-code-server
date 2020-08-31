@@ -18,7 +18,7 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     # container user home dir \
     EHOME=/home/vscode \
     # code-server version \
-    VERSION=3.4.1
+    VERSION=3.5.0
 
 # Install dependencies
 RUN apk --no-cache --update add \
@@ -26,7 +26,7 @@ RUN apk --no-cache --update add \
     curl \
     git \
     gnupg \
-    nodejs-current \
+    nodejs \
     openssh-client
 
 COPY code-server /usr/bin/
