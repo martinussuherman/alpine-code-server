@@ -18,7 +18,7 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     # container user home dir \
     EHOME=/home/vscode \
     # code-server version \
-    VERSION=3.5.0
+    VERSION=3.6.0
 
 # Install dependencies
 RUN apk --no-cache --update add \
