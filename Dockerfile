@@ -1,12 +1,6 @@
-FROM martinussuherman/alpine-tz-ep:glibc
+FROM martinussuherman/alpine-tz-ep:dev-glibc
 
-ENV LABEL_MAINTAINER="Martinus Suherman" \
-    LABEL_VENDOR="martinussuherman" \
-    LABEL_IMAGE_NAME="martinussuherman/alpine-tz-ep-code-server" \
-    LABEL_URL="https://hub.docker.com/r/martinussuherman/alpine-tz-ep-code-server/" \
-    LABEL_VCS_URL="https://github.com/martinussuherman/alpine-tz-ep-code-server" \
-    LABEL_DESCRIPTION="Alpine Linux based image of code-server bundled with some utilities" \
-    LABEL_LICENSE="GPL-3.0" \
+ENV \
     # container/su-exec UID \
     EUID=1001 \
     # container/su-exec GID \
@@ -15,10 +9,12 @@ ENV LABEL_MAINTAINER="Martinus Suherman" \
     EUSER=vscode \
     # container/su-exec group name \
     EGROUP=vscode \
+    # should user shell set to nologin? (yes/no) \
+    ENOLOGIN=no \
     # container user home dir \
     EHOME=/home/vscode \
     # code-server version \
-    VERSION=3.7.4
+    VERSION=3.9.0
 
 # Install dependencies
 RUN apk --no-cache --update add \
@@ -41,23 +37,5 @@ RUN chmod +x /usr/bin/code-server && \
     mv code-server-$VERSION-linux-amd64 /usr/lib/code-server && \
     sed -i 's/"$ROOT\/lib\/node"/node/g'  /usr/lib/code-server/bin/code-server
 
-ENTRYPOINT ["/entrypoint_su-exec.sh", "code-server"]
+ENTRYPOINT ["entrypoint_su-exec", "code-server"]
 CMD ["--bind-addr 0.0.0.0:8080"]
-
-#
-ARG LABEL_VERSION="latest"
-ARG LABEL_BUILD_DATE
-ARG LABEL_VCS_REF
-
-# Build-time metadata as defined at http://label-schema.org
-LABEL maintainer=$LABEL_MAINTAINER \
-      org.label-schema.build-date=$LABEL_BUILD_DATE \
-      org.label-schema.description=$LABEL_DESCRIPTION \
-      org.label-schema.name=$LABEL_IMAGE_NAME \
-      org.label-schema.schema-version="1.0" \
-      org.label-schema.url=$LABEL_URL \
-      org.label-schema.license=$LABEL_LICENSE \
-      org.label-schema.vcs-ref=$LABEL_VCS_REF \
-      org.label-schema.vcs-url=$LABEL_VCS_URL \
-      org.label-schema.vendor=$LABEL_VENDOR \
-      org.label-schema.version=$LABEL_VERSION
