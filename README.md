@@ -1,5 +1,8 @@
 # alpine-code-server
 
+![GitHub](https://img.shields.io/github/license/martinussuherman/alpine-code-server) ![Docker Pulls](https://img.shields.io/docker/pulls/martinussuherman/alpine-code-server) ![Docker Stars](https://img.shields.io/docker/stars/martinussuherman/alpine-code-server)
+
+[![From Alpine](https://img.shields.io/badge/FROM-martinussuherman/alpine:glibc-brightgreen.svg)](https://hub.docker.com/r/martinussuherman/alpine) ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/latest) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/latest)
 
 ---
 
