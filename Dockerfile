@@ -1,4 +1,4 @@
-FROM martinussuherman/alpine:glibc
+FROM martinussuherman/alpine:glibc-3.12
 
 ENV \
    # container/su-exec UID \
