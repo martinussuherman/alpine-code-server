@@ -1,20 +1,19 @@
-# alpine-tz-ep-code-server
+# alpine-code-server
 
-[![](https://img.shields.io/badge/%20%20FROM%20%20-martinussuherman%2Falpine--tz--ep-lightgray.svg)](https://hub.docker.com/r/martinussuherman/alpine-tz-ep)
 
 ---
 
 ## What is this image for ?
 
-This is an [Alpine Linux](https://hub.docker.com/_/alpine/) based image for [code-server](https://github.com/cdr/code-server/). It enables one to run [VS Code](https://code.visualstudio.com/) in the browser.
+This is an [Minimal Alpine Linux image with glibc](https://hub.docker.com/r/jeanblanchard/alpine-glibc) based image for [code-server](https://github.com/cdr/code-server/). It enables one to run [VS Code](https://code.visualstudio.com/) in the browser.
 
---- 
+---
 
 ## Why use this image?
 
 *code-server* service on this container will run as `non-root` (`vscode`) user. This add an extra layer of security and are generally recommended for production environments. This container also allow mapping of the `user id` dan `group id` of the user running docker to `vscode` user and group, which will enable the use of more restrictive file permission.
 
---- 
+---
 
 ## How to use this image?
 
@@ -44,6 +43,6 @@ services:
 
 ```
 
-*Note:* 
+*Note:*
 1. You will want to change the value for `EUID` and `EGID` with your current user `user id` dan `group id`.
 2. *code-server* config file will be saved to `~/path/on/host/.config/code-server/config.yaml`
