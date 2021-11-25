@@ -14,7 +14,7 @@ ENV \
    # container user home dir \
    EHOME=/home/vscode \
    # code-server version \
-   VERSION=3.11.1
+   VERSION=3.12.0
 
 COPY code-server /usr/bin/
 RUN chmod +x /usr/bin/code-server

@@ -30,7 +30,7 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: martinussuherman/alpine-code-server:3.11.1-alpine3.13-amd64, martinussuherman/alpine-code-server:3.11.1-alpine3.13, martinussuherman/alpine-code-server:latest
+          tags: martinussuherman/alpine-code-server:3.12.0-alpine3.13-amd64, martinussuherman/alpine-code-server:3.12.0-alpine3.13, martinussuherman/alpine-code-server:latest
 
       - name: Build and push arm64v8 image
         uses: docker/build-push-action@v2
@@ -39,4 +39,4 @@ jobs:
           context: .
           platforms: linux/arm64
           push: true
-          tags: martinussuherman/alpine-code-server:3.11.1-alpine3.13-arm64v8
+          tags: martinussuherman/alpine-code-server:3.12.0-alpine3.13-arm64v8
