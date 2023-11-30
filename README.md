@@ -20,7 +20,7 @@ This is an [Minimal Alpine Linux image with glibc](https://hub.docker.com/r/jean
 
 ## Why use this image?
 
-*code-server* service on this container will run as `non-root` (`vscode`) user. This add an extra layer of security and are generally recommended for production environments. This container also allow mapping of the `user id` dan `group id` of the user running docker to `vscode` user and group, which will enable the use of more restrictive file permission.
+*code-server* service on this container will run as `non-root` (`vscode`) user. This add an extra layer of security and are generally recommended for production environments. This container also allow mapping of the `user id` and `group id` of the user running docker to `vscode` user and group, which will enable the use of more restrictive file permission.
 
 ---
 
@@ -53,5 +53,5 @@ services:
 ```
 
 *Note:*
-1. You will want to change the value for `EUID` and `EGID` with your current user `user id` dan `group id`.
+1. You will want to change the value for `EUID` and `EGID` with your current user `user id` and `group id`.
 2. *code-server* config file will be saved to `~/path/on/host/.config/code-server/config.yaml`
