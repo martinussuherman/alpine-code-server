@@ -6,9 +6,21 @@
 
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/latest) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/latest)
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.10.0-alpine3.12-amd64) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.10.0-alpine3.12-amd64)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.9.3-alpine3.12-amd64) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.9.3-alpine3.12-amd64)
 
-![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.10.0-alpine3.12-arm64v8) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.10.0-alpine3.12-arm64v8)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.9.3-alpine3.12-arm64v8) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.9.3-alpine3.12-arm64v8)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.10.2-alpine3.12-amd64) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.10.2-alpine3.12-amd64)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.10.2-alpine3.12-arm64v8) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.10.2-alpine3.12-arm64v8)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.11.1-alpine3.13-amd64) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.11.1-alpine3.13-amd64)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.11.1-alpine3.13-arm64v8) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.11.1-alpine3.13-arm64v8)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.12.0-alpine3.13-amd64) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.12.0-alpine3.13-amd64)
+
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/martinussuherman/alpine-code-server/3.12.0-alpine3.13-arm64v8) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/martinussuherman/alpine-code-server/3.12.0-alpine3.13-arm64v8)
 
 ---
 
