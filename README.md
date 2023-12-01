@@ -31,7 +31,7 @@ This is an [Minimal Alpine Linux image with glibc](https://hub.docker.com/r/jean
 ```bash
 $ docker run --name code-server -v ~/path/on/host:/home/vscode -e TZ=Asia/Jakarta -e EUID=$(id -u) -e EGID=$(id -g) -p 8080:8080 martinussuherman/alpine-code-server
 ```
-This will set the `timezone` to Asia/Jakarta (you will want to change it to your own timezone) and map the `user id` dan `group id` of the current user to `vscode` user and group.
+This will set the `timezone` to Asia/Jakarta (you will want to change it to your own timezone) and map the `user id` and `group id` of the current user to `vscode` user and group.
 
 ### *Using docker-compose*
 
